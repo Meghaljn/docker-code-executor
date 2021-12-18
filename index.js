@@ -25,7 +25,8 @@ router.post('/', function(req, res) {
     exec('python test.py',10000, (error, stdout, stderr) => {
         if (error) {
             res.write(stderr);
-            res.write("Error in execution");
+            if(!stderr)
+                res.write("Error : Limit exceeded(time or memory)!");
             res.send();
             return;
         }

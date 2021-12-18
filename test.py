@@ -1,2 +1,2 @@
 while(1):
-  print("Hi")
+ print("Hi")

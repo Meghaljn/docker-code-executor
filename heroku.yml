@@ -1,3 +1,4 @@
-buid:
+build:
   docker:
     web : Dockerfile
+    
